@@ -1,0 +1,28 @@
+<div class="container">
+  <h1>{{title}}</h1>
+  <table class="table">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>amount</th>
+      <th>created</th>
+      <th>view</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let product of products">
+      <td>{{ product.id }}</td>
+      <td>{{ product.name }}</td>
+      <td>{{ product.amount }}</td>
+      <td>{{ product.created_at }}</td>
+      <td>
+        <button class="button is-primary" routerLink="/product/{{product.id}}">
+          Info
+        </button>
+      </td>
+    </tr>
+    <div *ngIf='products.length === 0'>No Results</div>
+    </tbody>
+  </table>
+</div>

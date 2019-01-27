@@ -1,0 +1,28 @@
+<!-- Page Content -->
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3">
+      <h1 class="my-4">Product nr. {{product.id}}</h1>
+    </div>
+    <!-- /.col-lg-3 -->
+    <div class="col-lg-9">
+      <div class="card mt-4">
+        <div class="card-body">
+          <h3 class="card-title">Product {{product.name}}</h3>
+
+        </div>
+      </div>
+      <!-- /.card -->
+      <div class="card card-outline-secondary my-4">
+        <div class="card-header">
+          Info
+        </div>
+        <div class="card-body">
+          <h4>Quantity: {{product.amount}}</h4>
+          <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
+          {{product.updated_at}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

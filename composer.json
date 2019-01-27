@@ -1,0 +1,10 @@
+{
+    "name": "micha/completation",
+    "authors": [
+        {
+            "name": "Michał Kukuła",
+            "email": "michal131711@gmail.com"
+        }
+    ],
+    "require": {}
+}
